@@ -1,0 +1,55 @@
+¡Bienvenidos a la lección 2! Es hora de escribir código.
+(Estar en Replit, en un proyecto de Java vacío).
+
+Muy bien, estamos en Replit. Vemos este archivo `Main.java`.
+Todo programa de Java empieza aquí, dentro de este bloque de código:
+`public static void main(String[] args) { ... }`
+
+No te preocupes por lo que significa `public static void` todavía. Piénsalo como el "punto de arranque" mágico que Java necesita para empezar. Nuestro código va *dentro* de estas llaves `{ }`.
+
+Vamos a hacer nuestro "Hola Mundo". Para mostrar texto en la consola, escribimos:
+(Escribir)
+`System.out.println("¡Hola Mundo!");`
+
+(Explicar lentamente) "`System.out.println`... es el comando para "imprimir una línea". Y lo que queremos imprimir (el texto) va entre paréntesis y comillas.
+¡Ah! Y miren al final. **El punto y coma (`;`)**. En Java, CADA línea de instrucción debe terminar con un punto y coma. Es como el punto final de una oración.
+
+(Presionar "Run")
+¡Y miren! En la consola de la derecha, dice "¡Hola Mundo!". ¡Felicidades, ya eres un programador de Java!
+
+### (Continuación) Variables
+Ahora, ¿qué pasa si queremos que el programa recuerde información? Usamos "variables". Una variable es una cajita en la memoria con un nombre.
+
+Vamos a crear una cajita para guardar texto. En Java, el texto se llama `String`.
+(Escribir)
+`String nombre = "Fido";`
+(Explicar) "Le decimos el tipo (`String`), el nombre (`nombre`), y el valor (`"Fido"`).
+
+Ahora, una cajita para un número entero. Se llama `int`.
+(Escribir)
+`int edad = 5;`
+
+¿Y cómo las usamos? ¡Podemos imprimirlas!
+(Escribir)
+`System.out.println(nombre);`
+`System.out.println(edad);`
+(Presionar "Run")
+
+Pero podemos hacerlo mejor. Podemos *concatenar* (unir) texto y variables usando el símbolo `+`.
+(Escribir)
+`System.out.println("Mi perro se llama " + nombre + " y tiene " + edad + " años.");`
+(Presionar "Run")
+¡Miren eso! El programa usó los valores de las variables.
+
+### Pausa para la Práctica
+¡Tu turno! Pausa el video y practica.
+1. Crea una nueva variable `String` llamada `comidaFavorita` y ponle tu comida favorita.
+2. Crea una nueva variable `int` llamada `numeroFavorito` y ponle tu número.
+3. Imprime una oración que diga: "Mi comida favorita es [COMIDA] y mi número es [NUMERO]".
+
+### Errores Comunes
+(Mostrar 1-2 minutos de errores)
+Error #1: ¡Olvidar el punto y coma! (Borrar un `;` y presionar "Run"). ¡Error! Java te dice exactamente dónde está el problema.
+Error #2: Poner un número entre comillas. `int edad = "5";` (Mostrar error). "5" (con comillas) es texto, 5 (sin comillas) es un número. ¡Java es muy estricto con los tipos!
+
+¡Genial! Ya sabes imprimir, guardar variables y unir texto. En la próxima lección, le daremos un cerebro a nuestro programa.

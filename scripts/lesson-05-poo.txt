@@ -1,0 +1,82 @@
+¡Esta es la lección más importante! Bienvenidos a la Programación Orientada a Objetos (POO).
+(Estar en Replit).
+
+Hasta ahora, todo nuestro código ha estado en `Main.java`.
+POO se trata de crear nuestras propias "plantillas" (Clases) para fabricar "cosas" (Objetos).
+Vamos a crear una plantilla para una `Mascota`[cite: 294].
+
+(Ir a la barra de archivos de Replit y hacer clic en "Add file").
+Vamos a crear un NUEVO archivo llamado `Mascota.java`. (¡La 'M' en mayúscula es una convención!)
+(Presionar Enter. Ahora tenemos dos archivos: Main.java y Mascota.java).
+
+(Ir al archivo `Mascota.java`).
+Escribimos nuestra "plantilla" o CLASE:
+(Escribir)
+`public class Mascota {`
+`  // ¡Aquí va el plano de nuestra mascota!`
+`}`
+
+¿Qué tiene una mascota? Tiene "atributos". Por ejemplo, un nombre y una edad.
+Estos son variables que van DENTRO de la clase.
+(Escribir)
+`private String nombre;`
+`private int edad;`
+(Explicar) "`private` (privado) es una palabra clave de la POO. Significa que nada ni nadie *fuera* de esta clase puede tocar estas variables directamente. A esto se le llama **Encapsulación**"[cite: 226].
+
+Ahora, ¿cómo le damos un nombre y edad cuando creamos una mascota? Usamos un "Constructor".
+Un constructor es un método especial que se llama automáticamente cuando creamos un objeto nuevo.
+(Escribir)
+`public Mascota(String nombre, int edad) {`
+`  this.nombre = nombre;`
+`  this.edad = edad;`
+`}`
+(Explicar) "Este método especial recibe el nombre y la edad, y los guarda en las variables privadas. `this.nombre` se refiere a la variable de la clase."
+
+¿Qué más hace una mascota? ¡Tiene "comportamientos" (Métodos)!
+(Escribir)
+`public void hacerSonido() {`
+`  System.out.println("¡Guau! ¡Guau!");`
+`}`
+
+¡Nuestra plantilla está lista!
+
+### (Continuación) Usando la Clase
+Ahora, volvemos a `Main.java`.
+¿Cómo "fabricamos" una mascota real (un Objeto) usando nuestra plantilla (Clase)?
+(Escribir dentro de `main`)
+`Mascota miPerro = new Mascota("Fido", 5);`
+(Explicar) "¡Esta es la línea mágica!
+`Mascota` - El tipo de objeto.
+`miPerro` - El nombre de nuestra variable.
+`new Mascota(...)` - ¡Aquí es donde "fabricamos" el objeto y llamamos al constructor! Le pasamos "Fido" y 5."
+
+¡Ahora tenemos un objeto `miPerro` en la memoria! ¿Cómo le decimos que ladre?
+(Escribir)
+`miPerro.hacerSonido();`
+(Presionar "Run")
+¡Miren! Imprimió "¡Guau! ¡Guau!". ¡Nuestro objeto está vivo!
+
+### (Continuación) Getters y Setters
+Una última cosa. ¿Cómo leo el nombre de mi perro?
+No puedo escribir `System.out.println(miPerro.nombre);`... (Mostrar el error).
+¡Porque el nombre es `private`! (Encapsulación).
+Para acceder a él de forma segura, creamos un "Getter" en nuestra clase `Mascota.java`.
+(Volver a `Mascota.java` y escribir)
+`public String getNombre() {`
+`  return this.nombre;`
+`}`
+(Explicar) "Un 'getter' es un método público que nos deja *leer* un atributo privado."
+
+(Volver a `Main.java`)
+`System.out.println("Mi mascota se llama: " + miPerro.getNombre());`
+(Presionar "Run")
+¡Y ahora funciona!
+
+### Pausa y Errores
+¡Esto fue mucho! Pausa el video y mira bien los dos archivos.
+1. En `Mascota.java`, crea un `getInt edad()` para leer la edad.
+2. En `Main.java`, imprime la edad de la mascota.
+
+Error Común: Olvidar la palabra `new`. `Mascota miPerro = Mascota(...)` ¡Error! Siempre debes usar `new` para crear un objeto.
+
+¡Felicidades! ¡Acabas de entender la idea principal de la Programación Orientada a Objetos!

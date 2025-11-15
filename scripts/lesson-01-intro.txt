@@ -1,0 +1,22 @@
+(Música introductoria alegre y enérgica)
+¡Hola a todos! Bienvenidos a "Fundamentos de Java". Soy [Tu Nombre], y en la próxima hora, vamos a aprender a programar usando uno de los lenguajes más poderosos del mundo.
+
+(Mostrar logos de Android, Minecraft, aplicaciones empresariales)
+¿Qué es la programación? Es simplemente darle instrucciones a una computadora para que haga algo.
+¿Y qué es Java? Java es el lenguaje que usaremos para dar esas instrucciones.
+
+Se usa en TODAS PARTES. El sistema operativo de Android en tu teléfono está basado en Java. Juegos mundialmente famosos como Minecraft fueron escritos en Java. Millones de aplicaciones de bancos y empresas usan Java. Es rápido, es seguro y funciona en todas partes.
+
+(Mostrar un diagrama: Clase -> Objeto)
+En este curso, no solo aprenderemos a escribir "Hola Mundo". Aprenderemos el concepto central de Java: la Programación Orientada a Objetos (POO).
+Suena complicado, pero es simple. En lugar de escribir un montón de código desordenado, la POO nos permite crear "plantillas" (llamadas Clases) para fabricar "cosas" (llamadas Objetos).
+Por ejemplo, podemos crear una plantilla de "Mascota" y luego usarla para crear un perro, un gato, o un dragón, cada uno con su propio nombre y edad. ¡Es la forma moderna de programar!
+
+(Mostrar Replit.com)
+Ahora, lo mejor. Para este curso, **no necesitas descargar ni instalar NADA**[cite: 215]. No necesitas ser un genio de la informática. Solo necesitas un navegador web.
+Vamos a usar una herramienta en línea 100% gratuita llamada **Replit**[cite: 216, 251].
+(Tomarse 2-3 minutos para mostrar la interfaz de Replit).
+Miren, es súper simple. Vas a Replit.com, creas una cuenta gratis, le das a "Create Repl" y eliges la plantilla "Java".
+Te dará un editor de código (aquí escribimos), una consola (aquí vemos el resultado) y un explorador de archivos (para cuando hagamos POO).
+
+Es la herramienta perfecta para aprender. En la próxima lección, escribiremos nuestro primer programa en Java. ¡Vamos!

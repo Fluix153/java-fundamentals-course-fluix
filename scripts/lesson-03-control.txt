@@ -1,0 +1,50 @@
+¡Hola! Bienvenidos a la lección 3.
+(Empezar con el código de la lección 2).
+Hasta ahora, nuestro programa hace lo mismo siempre. Es aburrido. Vamos a darle un "cerebro" para que pueda tomar decisiones.
+Para esto, usamos la sentencia `if` (Si...).
+
+(Escribir)
+`int edad = 15;`
+`if (edad >= 18) {`
+`  System.out.println("Eres mayor de edad.");`
+`}`
+(Explicar) "Esto significa: SI (if) la condición `(edad >= 18)` es verdadera, se ejecuta el código dentro de las llaves `{}`. Si presiono "Run" ahora... no pasa nada. Porque 15 no es mayor o igual a 18."
+
+¿Y si queremos que haga algo si la condición es *falsa*? Añadimos un `else` (Si no...).
+(Escribir)
+`else {`
+`  System.out.println("Eres menor de edad.");`
+`}`
+(Presionar "Run")
+¡Ahora sí! Imprime "Eres menor de edad".
+
+### (Continuación) Bucles
+¡Genial! Ahora, ¿qué pasa si queremos repetir una tarea? No queremos escribir `System.out.println` 100 veces. Usamos un "bucle". El más común es el bucle `for`.
+La sintaxis es un poco rara, pero te la explico:
+(Escribir)
+`System.out.println("Voy a contar hasta 5:");`
+`for (int i = 1; i <= 5; i++) {`
+`  System.out.println(i);`
+`}`
+
+(Explicar lentamente el `for`)
+"El bucle `for` tiene 3 partes entre paréntesis:
+1. `int i = 1;`: Creamos un contador `i` que empieza en 1.
+2. `i <= 5;`: Le decimos "sigue repitiendo MIENTRAS `i` sea menor o igual a 5".
+3. `i++`: Al final de cada vuelta, súmale 1 a `i`.
+Así que primero `i` es 1 (imprime 1). Luego `i` es 2 (imprime 2)... hasta que `i` es 6, la condición (`i <= 5`) es falsa, y el bucle para."
+(Presionar "Run")
+¡Miren! Contó hasta 5.
+
+### Pausa para la Práctica
+¡Tu turno! Pausa el video.
+1. Cambia el `if` para que revise si una variable `temperatura` (ej: `int temperatura = 25;`) es "mayor a 30" (imprime "Hace calor").
+2. Cambia el bucle `for` para que cuente del 1 al 10.
+
+### Errores Comunes
+Error #1: Usar un solo `=` en un `if`.
+(Escribir) `if (edad = 18)`... ¡Error!
+"Recuerda: `=` (un solo igual) es para *asignar* un valor (`edad = 15`). `==` (dos iguales) es para *comparar* (`edad == 18`). ¡Un error súper común!"
+Error #2: Bucle infinito. (Mostrar `for (int i = 1; i > 0; i++)`). "¡Esto nunca parará! Replit lo detendrá, pero ¡cuidado!"
+
+¡Ya sabes tomar decisiones y repetir tareas! En la próxima, haremos el programa interactivo.

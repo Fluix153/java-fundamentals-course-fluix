@@ -1,0 +1,57 @@
+¡Hola! Bienvenidos a la lección 4.
+Hoy haremos dos cosas geniales:
+1. Crear "métodos" (nuestros propios comandos).
+2. Leer la entrada del usuario para hacer el programa interactivo.
+
+(Empezar con un archivo limpio)
+Primero, ¿qué es un método? Hasta ahora, todo nuestro código está en `main`. Pero si se hace muy largo, es un desastre.
+Un "método" es un bloque de código con un nombre, que podemos "llamar" cuando queramos.
+(Ir *fuera* de las llaves de `main`, pero *dentro* de las llaves de `Main`).
+(Escribir)
+`public static void saludar() {`
+`  System.out.println("¡Hola desde mi método!");`
+`}`
+(Explicar) "Hemos creado un nuevo comando llamado `saludar`. No te preocupes por `public static void` por ahora, solo cópialo."
+
+Ahora, si le doy "Run"... no pasa nada.
+¿Por qué? Porque solo *definimos* el método. ¡Nunca lo *llamamos*!
+(Volver *dentro* de `main`)
+(Escribir)
+`System.out.println("Voy a llamar a mi método:");`
+`saludar();`
+`System.out.println("¡Ya lo llamé!");`
+(Presionar "Run")
+¡Miren! El programa corrió, llamó a `saludar`, imprimió su línea, y luego volvió a `main`. ¡Esto es código reutilizable!
+
+### (Continuación) Entrada del Usuario (Scanner)
+Ahora, lo más divertido. ¿Cómo le *preguntamos* algo al usuario?
+Necesitamos importar una herramienta. En la línea 1, arriba de `class Main`, escribimos:
+(Escribir) `import java.util.Scanner;`
+
+Ahora, dentro de `main`, creamos un "objeto" de tipo Scanner. (Esto es un adelanto de POO).
+(Escribir)
+`Scanner miScanner = new Scanner(System.in);`
+(Explicar) "Esto crea un nuevo Scanner que está listo para leer la entrada del sistema (`System.in`)."
+
+Ahora, le preguntamos al usuario:
+(Escribir)
+`System.out.println("¿Cómo te llamas?");`
+
+Y ahora, le decimos al scanner que espere y lea la próxima línea de texto que el usuario escriba:
+(Escribir)
+`String nombre = miScanner.nextLine();`
+
+¡La respuesta del usuario ahora está guardada en la variable `nombre`!
+(Escribir)
+`System.out.println("¡Hola, " + nombre + "! Bienvenido.");`
+(Presionar "Run". Escribir un nombre en la consola y presionar Enter).
+¡Es interactivo!
+
+### Pausa y Errores
+¡Tu turno! Pausa el video.
+1. Intenta preguntar la "edad" del usuario. (Pista: usa `int edad = miScanner.nextInt();`).
+2. Crea un método llamado `despedirse()` que imprima "¡Adiós!". Llama a ese método al final de tu programa.
+
+Error Común: Olvidar el `import java.util.Scanner;`. ¡Si lo olvidas, Java no sabe qué es un "Scanner" y te dará un error!
+
+¡Ya sabes crear comandos y hablar con el usuario! En la próxima lección, el gran final: POO.
