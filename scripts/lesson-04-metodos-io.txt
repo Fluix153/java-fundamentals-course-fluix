@@ -1,37 +1,48 @@
 ¡Hola! Bienvenidos a la lección 4.
-Hoy haremos dos cosas geniales:
-1. Crear "métodos" (nuestros propios comandos).
-2. Leer la entrada del usuario para hacer el programa interactivo.
-
 (Empezar con un archivo limpio)
-Primero, ¿qué es un método? Hasta ahora, todo nuestro código está en `main`. Pero si se hace muy largo, es un desastre.
-Un "método" es un bloque de código con un nombre, que podemos "llamar" cuando queramos.
+`public static void main(String[] args) { ... }`
+
+Hoy haremos dos cosas geniales: Métodos y Entrada del Usuario.
+Primero, ¿qué es un **método**?
+Hasta ahora, todo nuestro código está en `main`. Pero imagínate que tu programa crece y `main` tiene 500 líneas. Sería un desastre, imposible de leer.
+Un "método" es un bloque de código con un nombre, que podemos "llamar" cuando queramos. Es como crear tu propio comando, o tu propia receta. La idea es "No te repitas a ti mismo".
+
 (Ir *fuera* de las llaves de `main`, pero *dentro* de las llaves de `Main`).
 (Escribir)
 `public static void saludar() {`
 `  System.out.println("¡Hola desde mi método!");`
+`  System.out.println("¡Qué tengas un buen día!");`
 `}`
-(Explicar) "Hemos creado un nuevo comando llamado `saludar`. No te preocupes por `public static void` por ahora, solo cópialo."
+(Explicar) "Hemos creado un nuevo comando, un método, llamado `saludar`. No te preocupes por `public static void` por ahora, solo cópialo. Es la forma de definir un método que se puede llamar desde `main`."
 
-Ahora, si le doy "Run"... no pasa nada.
-¿Por qué? Porque solo *definimos* el método. ¡Nunca lo *llamamos*!
+Ahora, si le doy "Run"...
+(Presionar "Run")
+... no pasa nada. (La consola está vacía).
+¿Por qué? Porque solo *definimos* la receta. ¡Nunca la *usamos*!
+Para usarla, tenemos que "llamar" al método.
 (Volver *dentro* de `main`)
 (Escribir)
 `System.out.println("Voy a llamar a mi método:");`
 `saludar();`
-`System.out.println("¡Ya lo llamé!");`
+`System.out.println("Voy a llamarlo de nuevo:");`
+`saludar();`
+
+(Explicar) "Simplemente escribimos el nombre del método con paréntesis y punto y coma."
 (Presionar "Run")
-¡Miren! El programa corrió, llamó a `saludar`, imprimió su línea, y luego volvió a `main`. ¡Esto es código reutilizable!
+¡Miren! El programa corrió `main`, llamó a `saludar`, se ejecutó todo el código de `saludar`. Volvió a `main`, imprimió la siguiente línea, y luego llamó a `saludar` ¡otra vez!
+¡Esto es código reutilizable!
 
 ### (Continuación) Entrada del Usuario (Scanner)
 Ahora, lo más divertido. ¿Cómo le *preguntamos* algo al usuario?
-Necesitamos importar una herramienta. En la línea 1, arriba de `class Main`, escribimos:
+Necesitamos importar una herramienta del kit de herramientas de Java.
+En la línea 1, arriba de `class Main`, escribimos:
 (Escribir) `import java.util.Scanner;`
+(Explicar) "Le estamos diciendo a nuestro programa: 'Oye, vamos a necesitar la herramienta Scanner, por favor tráela'."
 
-Ahora, dentro de `main`, creamos un "objeto" de tipo Scanner. (Esto es un adelanto de POO).
+Ahora, dentro de `main`, tenemos que *crear* un objeto Scanner. (¡Esto es un adelanto de la Lección 5!).
 (Escribir)
 `Scanner miScanner = new Scanner(System.in);`
-(Explicar) "Esto crea un nuevo Scanner que está listo para leer la entrada del sistema (`System.in`)."
+(Explicar) "Esto es POO. Estamos creando un *objeto* `miScanner` a partir de la *clase* `Scanner`. Le decimos que lea la entrada del sistema (`System.in`), o sea, el teclado."
 
 Ahora, le preguntamos al usuario:
 (Escribir)
@@ -40,18 +51,31 @@ Ahora, le preguntamos al usuario:
 Y ahora, le decimos al scanner que espere y lea la próxima línea de texto que el usuario escriba:
 (Escribir)
 `String nombre = miScanner.nextLine();`
+(Explicar) "El programa se va a pausar en esta línea, esperando que escribas algo y presiones Enter. Lo que escribas, se guardará en la variable `nombre`."
 
-¡La respuesta del usuario ahora está guardada en la variable `nombre`!
+¡La respuesta del usuario ahora está guardada! Vamos a usarla.
 (Escribir)
 `System.out.println("¡Hola, " + nombre + "! Bienvenido.");`
-(Presionar "Run". Escribir un nombre en la consola y presionar Enter).
+
+(Presionar "Run")
+(El programa imprime "¿Cómo te llamas?" y se detiene. Ir a la consola).
+"Miren, el programa está esperando. Voy a escribir mi nombre... [Tu Nombre]... y presiono Enter."
+(El programa imprime "¡Hola, [Tu Nombre]! Bienvenido.")
 ¡Es interactivo!
 
-### Pausa y Errores
-¡Tu turno! Pausa el video.
-1. Intenta preguntar la "edad" del usuario. (Pista: usa `int edad = miScanner.nextInt();`).
-2. Crea un método llamado `despedirse()` que imprima "¡Adiós!". Llama a ese método al final de tu programa.
+### Pausa para la Práctica (Extensa)
+¡Tu turno! Pausa el video. Te reto.
+1. Después de preguntar el nombre, pregúntale al usuario su edad. (Pista: `System.out.println("¿Cuántos años tienes?");`).
+2. Para leer un número (un `int`), NO puedes usar `miScanner.nextLine()`. Tienes que usar:
+   `int edad = miScanner.nextInt();`
+3. Imprime una línea que diga "Wow, [EDAD] años, ¡genial!".
 
-Error Común: Olvidar el `import java.util.Scanner;`. ¡Si lo olvidas, Java no sabe qué es un "Scanner" y te dará un error!
+### Errores Comunes
+Error #1: ¡Olvidar el `import java.util.Scanner;`!
+(Borrar el import y presionar "Run").
+¡ERROR! "`cannot find symbol: class Scanner`". Java no tiene idea de qué es un "Scanner" si no lo importas.
+
+Error #2: `nextInt()` y `nextLine()`
+(Mostrar el problema). "Un error súper común es que después de usar `nextInt()`, el siguiente `nextLine()` falla. Es un error técnico de Java. La solución fácil por ahora es: si solo vas a leer texto, usa siempre `nextLine()`."
 
 ¡Ya sabes crear comandos y hablar con el usuario! En la próxima lección, el gran final: POO.

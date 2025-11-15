@@ -1,43 +1,50 @@
+(Música de cierre suave, pero de logro)
 ¡Lo lograron! ¡Completaron el curso de Fundamentos de Java y POO!
 
-(Mostrar el proyecto de Mascota funcionando).
-En una hora, pasamos de cero a esto. ¡Creamos un programa que usa múltiples archivos, clases, objetos y métodos!
-Aprendimos a:
-- Imprimir en consola (`System.out.println`)
-- Guardar datos en Variables (`String`, `int`)
-- Tomar decisiones (`if-else`) y repetir tareas (`for`)
-- Crear métodos reutilizables (`public static void...`)
-- Leer la entrada del usuario (`Scanner`)
-- Y lo más importante: entendimos la POO (Clases, Objetos, Constructores, Métodos, Encapsulación).
+(Mostrar el proyecto de Mascota funcionando. Hacer clic entre `Main.java` y `Mascota.java`).
+Miren esto. En menos de una hora, pasamos de cero a un programa que usa múltiples archivos, clases, objetos y métodos.
 
-### (Continuación) Errores Comunes (Extenso)
-Ahora, un repaso final de los **5 Errores Más Comunes** en Java. ¡Grábatelos en la memoria!
+Quiero que hagamos un repaso rápido de lo que aprendimos.
+- **Lección 1:** Vimos qué es Java (Minecraft, Android) y preparamos nuestro editor en línea, Replit.
+- **Lección 2:** Escribimos nuestro primer `System.out.println` y aprendimos sobre variables, las "cajas" para guardar datos como `String` (texto) e `int` (números).
+- **Lección 3:** Le dimos un cerebro al programa. Usamos `if`, `else if` y `else` para tomar decisiones, y usamos bucles `for` para repetir tareas.
+- **Lección 4:** Organizamos nuestro código con Métodos (nuestros propios comandos) y lo hicimos interactivo usando la clase `Scanner` para leer lo que el usuario escribe.
+- **Lección 5:** ¡La gran lección! Entendimos la POO. Creamos nuestra propia *Clase* (`Mascota.java`) que es un plano, y luego fabricamos *Objetos* (nuestro `miPerro`) usando la palabra `new` y un `Constructor`. Aprendimos sobre `private` (Encapsulación) y `getters`.
 
-1. **¡Olvidar el Punto y Coma (`;`)!**
-(Mostrar un error de ;). "Java es estricto. Cada instrucción termina en punto y coma. Si te falta uno, el programa no correrá. ¡Revisa esto primero!"
+¡Es un montón de conocimiento!
 
-2. **¡Olvidar las Llaves (`{ }`)!**
-(Mostrar un `if` sin llaves o un `for` sin llaves). "Cada `if`, `else`, `for`, `main` y `class` necesita su par de llaves de apertura y cierre. Si te falta una, o sobra una, ¡tendrás un desastre!"
+Ahora, antes de terminar, el repaso más importante: Los **6 Errores Más Comunes** en Java. Si tu código se rompe, ¡99% seguro es una de estas cosas!
 
-3. **¡Sensibilidad a Mayúsculas!**
+(Mostrar una lista en pantalla o en el código)
+
+**Error #1: ¡Olvidar el Punto y Coma (`;`)!**
+(Mostrar un error de ;). "Lo vimos en la Lección 2. Java es estricto. Cada instrucción termina en punto y coma. Si te falta uno, el programa no correrá. ¡Revisa esto primero!"
+
+**Error #2: ¡Olvidar o mezclar las Llaves (`{ }`)!**
+(Mostrar un `if` sin llaves o un `for` sin llaves). "Cada `class`, `main`, `if`, `else` y `for` necesita su par de llaves de apertura `{` y cierre `}`. Si te falta una, o sobra una, ¡tendrás un desastre!"
+
+**Error #3: ¡Sensibilidad a Mayúsculas!**
 (Mostrar `String nombre;` y luego `system.out.println(Nombre);`)
 "¡Error! `nombre` con 'n' minúscula NO es lo mismo que `Nombre` con 'N' mayúscula. `System` (con 'S') no es lo mismo que `system` (con 's'). ¡Java es MUY sensible a esto!"
 
-4. **Usar `==` para comparar Strings.**
-(Mostrar `String s1 = "Hola"; if (s1 == "Hola") ...`)
-"Esto a veces funciona, ¡pero a veces falla! Es un error terrible. Para comparar si dos `Strings` son iguales, NUNCA uses `==`. Siempre usa el método `.equals()`."
-(Mostrar: `if (s1.equals("Hola")) ...`) "¡Esta es la forma correcta!"
+**Error #4: Usar `=` (asignar) en lugar de `==` (comparar).**
+(Mostrar `if (edad = 18) ...`)
+"¡Este error es sutil! `if (edad == 18)` (con doble igual) es una PREGUNTA. `if (edad = 18)` (con un igual) es una ORDEN, y ¡romperá tu `if`!"
 
-5. **¡El error `NullPointerException`!**
-"No lo vimos, pero lo verás. Es cuando creas una variable de objeto (ej: `Mascota miMascota;`) pero olvidas *fabricar* el objeto (olvidas el `... = new Mascota(...)`). Luego, si intentas usar `miMascota.hacerSonido()`, ¡el programa explota! Porque la variable está 'vacía' o 'null'."
+**Error #5: Comparar `Strings` con `==`.**
+"Este es un error avanzado pero vital. NUNCA compares si dos `Strings` son iguales con `==`. Siempre usa el método `.equals()`."
+(Mostrar: `if (nombre.equals("Fido")) ...`) "¡Esta es la forma correcta!"
+
+**Error #6: El `NullPointerException`.**
+"Lo verás. Es cuando creas una variable de objeto (ej: `Mascota miMascota;`) pero olvidas *fabricar* el objeto (olvidas el `... = new Mascota(...)`). Luego, si intentas usar `miMascota.hacerSonido()`, ¡el programa explota! Porque la variable está 'vacía' o 'null'."
 
 ### (Continuación) ¿Y ahora qué?
-¡El viaje apenas comienza! La POO es un mundo gigante. Los siguientes pasos son:
-1. **Herencia**: ¿Cómo crear una clase "Perro" y "Gato" que "hereden" de "Mascota"?
-2. **Polimorfismo**: ¿Cómo hacer que `Perro.hacerSonido()` diga "Guau" y `Gato.hacerSonido()` diga "Miau"?
-3. **Arrays o ArrayLists**: ¿Cómo crear una *lista* de 100 mascotas?
+El viaje apenas comienza. La POO es un mundo gigante. Los siguientes pasos lógicos son:
+1.  [cite_start]**Arrays y ArrayLists**: ¿Cómo crear no *una* mascota, sino una *lista* de 100 mascotas? [cite: 54]
+2.  **Herencia**: ¿Cómo crear una clase "Perro" y "Gato" que "hereden" las propiedades de "Mascota", pero que tengan sus propios métodos?
+3.  **Polimorfismo**: ¿Cómo hacer que `Perro.hacerSonido()` diga "Guau" y `Gato.hacerSonido()` diga "Miau", aunque ambos sean "Mascotas"?
 
-Un recurso increíble para seguir es la **Documentación oficial de Oracle Java**[cite: 299], o simplemente buscar tutoriales sobre esos temas.
+El mejor recurso para seguir es la **Documentación oficial de Oracle Java**, o simplemente buscar tutoriales sobre esos tres temas: Herencia, Polimorfismo y ArrayLists.
 
 Muchas gracias por acompañarme. Crearon un programa real hoy. Sigan construyendo, sigan curioseando, ¡y feliz programación!
 (Música de cierre)

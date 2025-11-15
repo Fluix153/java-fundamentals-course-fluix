@@ -1,22 +1,52 @@
-(Música introductoria alegre y enérgica)
-¡Hola a todos! Bienvenidos a "Fundamentos de Java". Soy [Tu Nombre], y en la próxima hora, vamos a aprender a programar usando uno de los lenguajes más poderosos del mundo.
+(Música introductoria alegre y enérgica, que dure unos 10 segundos)
+¡Hola a todos y bienvenidos a "Fundamentos de Java"! Soy [Tu Nombre], y estoy súper emocionado de ser su guía. En la próxima hora, vamos a hacer algo que suena complicado, pero que te prometo que es fascinante: vamos a aprender a programar. Y lo haremos usando uno de los lenguajes más famosos y poderosos del mundo: Java.
 
-(Mostrar logos de Android, Minecraft, aplicaciones empresariales)
-¿Qué es la programación? Es simplemente darle instrucciones a una computadora para que haga algo.
-¿Y qué es Java? Java es el lenguaje que usaremos para dar esas instrucciones.
+(Mostrar logos de Android y Minecraft)
+¿Te suena Java? ¡Debería! ¿Tienes un teléfono Android? Miles de las aplicaciones que usas están hechas con Java. ¿Alguna vez has jugado a Minecraft? ¡Fue construido originalmente en Java! Java está en todas partes: en los bancos, en los carros, en los televisores. Es un lenguaje robusto, seguro y que funciona en casi cualquier dispositivo.
 
-Se usa en TODAS PARTES. El sistema operativo de Android en tu teléfono está basado en Java. Juegos mundialmente famosos como Minecraft fueron escritos en Java. Millones de aplicaciones de bancos y empresas usan Java. Es rápido, es seguro y funciona en todas partes.
+Pero, ¿qué es "programar"?
+(Hablar con calma, usar las manos para explicar)
+Programar es, simplemente, darle una lista de instrucciones a una computadora. Es como una receta de cocina. La computadora no piensa por sí sola, solo sigue las instrucciones que tú le das.
 
-(Mostrar un diagrama: Clase -> Objeto)
-En este curso, no solo aprenderemos a escribir "Hola Mundo". Aprenderemos el concepto central de Java: la Programación Orientada a Objetos (POO).
-Suena complicado, pero es simple. En lugar de escribir un montón de código desordenado, la POO nos permite crear "plantillas" (llamadas Clases) para fabricar "cosas" (llamadas Objetos).
-Por ejemplo, podemos crear una plantilla de "Mascota" y luego usarla para crear un perro, un gato, o un dragón, cada uno con su propio nombre y edad. ¡Es la forma moderna de programar!
+Y en este curso, no solo vamos a dar instrucciones simples. Vamos a aprender el concepto central de Java, la idea que lo hace tan poderoso: la **Programación Orientada a Objetos (POO)**.
 
-(Mostrar Replit.com)
-Ahora, lo mejor. Para este curso, **no necesitas descargar ni instalar NADA**[cite: 215]. No necesitas ser un genio de la informática. Solo necesitas un navegador web.
-Vamos a usar una herramienta en línea 100% gratuita llamada **Replit**[cite: 216, 251].
-(Tomarse 2-3 minutos para mostrar la interfaz de Replit).
-Miren, es súper simple. Vas a Replit.com, creas una cuenta gratis, le das a "Create Repl" y eliges la plantilla "Java".
-Te dará un editor de código (aquí escribimos), una consola (aquí vemos el resultado) y un explorador de archivos (para cuando hagamos POO).
+(Mostrar un diagrama simple: Clase -> Objeto)
+Suena súper complicado, ¿verdad? "Programación Orientada a Objetos". Pero te lo explico con una analogía fácil:
+Piensa en los planos de una casa.
+La **Clase** es el *plano*. Es el dibujo, la plantilla. El plano no es una casa, ¿verdad? No puedes vivir en él. Es solo la *idea* de la casa.
+El **Objeto** es la *casa real* que construyes usando ese plano.
 
-Es la herramienta perfecta para aprender. En la próxima lección, escribiremos nuestro primer programa en Java. ¡Vamos!
+Con un solo plano (una Clase), puedes construir CIENTOS de casas (Objetos). Y cada casa puede tener cosas diferentes: una puede ser azul, otra roja; una puede tener 2 puertas, otra 4.
+Eso es la POO. Creamos una "plantilla" (Clase), por ejemplo, una plantilla de "Mascota". Y luego, usamos esa plantilla para crear "objetos": un perro llamado Fido, un gato llamado Mishi, cada uno con su propio nombre y edad. ¡Es una forma súper organizada de programar!
+
+(Mostrar el navegador abriendo Replit.com)
+Ahora, lo mejor de todo. ¿Qué necesitas instalar para empezar? ¿Qué programas complicados necesitas descargar?
+¡ABSOLUTAMENTE NADA!
+En este curso, no vas a instalar nada. Lo único que necesitas es tu navegador web.
+Vamos a usar una herramienta en línea 100% gratuita llamada **Replit.com**.
+
+(Hacer esto MUY LENTO en pantalla. Esta es la parte clave para llenar el tiempo).
+Ok, quiero que hagas esto conmigo. Abre tu navegador y ve a `replit.com`.
+(Esperar 5-10 segundos).
+Vas a ver una pantalla para crear una cuenta. Puedes usar tu cuenta de Google o crear una nueva. Es totalmente gratis.
+(Esperar 10-15 segundos mientras simulas el registro).
+Una vez que estés dentro, verás tu panel principal. Para crear un nuevo proyecto, vamos a ese botón azul en la esquina que dice "Create Repl". "Repl" es solo el nombre que le dan a un proyecto.
+(Hacer clic en "Create Repl").
+Ahora, Replit te pregunta qué "plantilla" quieres usar. Hay CIENTOS. Python, HTML... vamos a buscar "Java".
+(Escribir "Java" en el buscador).
+Aquí está. "Java". Hacemos clic en ella.
+A la derecha, te pide un nombre. Vamos a llamarlo "Leccion1-HolaMundo".
+(Escribir el nombre).
+Y ahora, hacemos clic en "Create Repl".
+(Esperar a que cargue. Esto puede tomar unos 15-20 segundos. Hablar mientras carga).
+"Lo que Replit está haciendo ahora es configurar una computadora virtual para nosotros en la nube. Está instalando Java y todo lo que necesitamos, para que nosotros no tengamos que hacerlo."
+
+¡Y listo! Ya estamos dentro. (Señalar cada parte de la pantalla con el cursor).
+Miren esto:
+1.  **A la izquierda**, tenemos nuestros archivos. Replit ya nos creó uno llamado `Main.java`. Aquí es donde escribiremos nuestro código.
+2.  **En el centro**, está el editor de texto. Aquí es donde escribimos las instrucciones.
+3.  **A la derecha**, tenemos la "Consola". Esta ventana negra es donde veremos el resultado de nuestro programa. Es donde la computadora nos "hablará".
+
+¡Eso es todo! Ya estamos listos.
+En la próxima lección, escribiremos nuestras primeras líneas de código en este editor y haremos que la consola nos salude. ¡Te veo allí!
+(Música de cierre)

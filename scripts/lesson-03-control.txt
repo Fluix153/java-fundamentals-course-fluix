@@ -1,50 +1,87 @@
 ¡Hola! Bienvenidos a la lección 3.
-(Empezar con el código de la lección 2).
-Hasta ahora, nuestro programa hace lo mismo siempre. Es aburrido. Vamos a darle un "cerebro" para que pueda tomar decisiones.
+(Empezar con un archivo limpio en Replit).
+`public static void main(String[] args) { ... }`
+
+Hasta ahora, nuestro programa es una lista de instrucciones que se ejecuta de arriba a abajo, siempre igual. Es aburrido.
+Vamos a darle un "cerebro" para que pueda tomar decisiones.
 Para esto, usamos la sentencia `if` (Si...).
+Pero antes del `if`, tenemos que entender qué es `true` (verdadero) y `false` (falso).
+En programación, todo se reduce a si una pregunta es verdadera o falsa.
+¿`5 > 3`? Verdadero.
+¿`10 == 20`? Falso.
 
 (Escribir)
 `int edad = 15;`
 `if (edad >= 18) {`
 `  System.out.println("Eres mayor de edad.");`
 `}`
-(Explicar) "Esto significa: SI (if) la condición `(edad >= 18)` es verdadera, se ejecuta el código dentro de las llaves `{}`. Si presiono "Run" ahora... no pasa nada. Porque 15 no es mayor o igual a 18."
+(Explicar) "Esto significa: SI (if) la condición entre paréntesis `(edad >= 18)` es verdadera, se ejecuta el código dentro de las llaves `{}`."
+"`>=` significa 'mayor o igual que'."
+"Si presiono "Run" ahora... (Presionar Run)... no pasa nada.
+¿Por qué? Porque `edad` es 15. La pregunta '¿es 15 mayor o igual a 18?' es FALSA. Así que Java simplemente se salta el bloque de código."
 
-¿Y si queremos que haga algo si la condición es *falsa*? Añadimos un `else` (Si no...).
+Pero, ¿y si queremos que haga algo si la condición es *falsa*? Añadimos un `else` (Si no...).
 (Escribir)
 `else {`
 `  System.out.println("Eres menor de edad.");`
 `}`
 (Presionar "Run")
 ¡Ahora sí! Imprime "Eres menor de edad".
+Java revisó: ¿es 15 >= 18? Falso. Así que saltó al bloque `else` y ejecutó ese código.
+
+¡Podemos hacerlo más complejo! ¿Qué tal un `else if`?
+(Modificar)
+`int nota = 8;`
+`if (nota == 10) {`
+`  System.out.println("¡Perfecto!");`
+`} else if (nota > 5) {`
+`  System.out.println("¡Aprobado!");`
+`} else {`
+`  System.out.println("Reprobado.");`
+`}`
+(Explicar) "¡Miren el `==` (doble igual)! Recuerden de la lección pasada: un solo `=` es para asignar, ¡doble `==` es para comparar!"
+(Presionar "Run"). Imprimirá "¡Aprobado!".
 
 ### (Continuación) Bucles
-¡Genial! Ahora, ¿qué pasa si queremos repetir una tarea? No queremos escribir `System.out.println` 100 veces. Usamos un "bucle". El más común es el bucle `for`.
-La sintaxis es un poco rara, pero te la explico:
+¡Genial! Ahora, ¿qué pasa si queremos repetir una tarea? ¿Si quiero imprimir los números del 1 al 100? No voy a escribir 100 líneas de `System.out.println`.
+Usamos un "bucle". El más común es el bucle `for`.
+La sintaxis es rara, pero miren.
 (Escribir)
 `System.out.println("Voy a contar hasta 5:");`
 `for (int i = 1; i <= 5; i++) {`
 `  System.out.println(i);`
 `}`
 
-(Explicar lentamente el `for`)
-"El bucle `for` tiene 3 partes entre paréntesis:
-1. `int i = 1;`: Creamos un contador `i` que empieza en 1.
-2. `i <= 5;`: Le decimos "sigue repitiendo MIENTRAS `i` sea menor o igual a 5".
-3. `i++`: Al final de cada vuelta, súmale 1 a `i`.
-Así que primero `i` es 1 (imprime 1). Luego `i` es 2 (imprime 2)... hasta que `i` es 6, la condición (`i <= 5`) es falsa, y el bucle para."
+(Explicar lentamente el `for`. Esta es la parte larga).
+"El bucle `for` tiene 3 partes entre paréntesis, separadas por punto y coma:
+1.  **Inicialización:** `int i = 1;`. Creamos una variable *temporal* `i` que es nuestro contador. Empieza en 1.
+2.  **Condición:** `i <= 5;`. Le decimos a Java: "sigue repitiendo MIENTRAS esta condición sea verdadera".
+3.  **Incremento:** `i++`. Esto es una abreviatura de `i = i + 1`. Al final de *cada* vuelta, le suma 1 a `i`.
+
+(Trazar el bucle manualmente con el dedo en la pantalla)
+"Vamos a seguirlo:
+- Vuelta 1: `i` empieza en 1. ¿Es 1 <= 5? Sí (Verdadero). Entra al bucle. Imprime `i` (Imprime "1"). Llega al final. `i++`. Ahora `i` vale 2.
+- Vuelta 2: ¿Es 2 <= 5? Sí. Imprime "2". `i++`. Ahora `i` vale 3.
+- Vuelta 3: ¿Es 3 <= 5? Sí. Imprime "3". `i++`. Ahora `i` vale 4.
+- Vuelta 4: ¿Es 4 <= 5? Sí. Imprime "4". `i++`. Ahora `i` vale 5.
+- Vuelta 5: ¿Es 5 <= 5? Sí. Imprime "5". `i++`. Ahora `i` vale 6.
+- Vuelta 6: ¿Es 6 <= 5? No (Falso). El bucle se rompe. El programa continúa."
 (Presionar "Run")
 ¡Miren! Contó hasta 5.
 
 ### Pausa para la Práctica
 ¡Tu turno! Pausa el video.
-1. Cambia el `if` para que revise si una variable `temperatura` (ej: `int temperatura = 25;`) es "mayor a 30" (imprime "Hace calor").
-2. Cambia el bucle `for` para que cuente del 1 al 10.
+1.  Cambia el bucle `for` para que cuente del 1 al 10. (Pista: solo tienes que cambiar un número).
+2.  (Reto difícil) ¿Cómo harías que cuente *hacia atrás* de 5 a 1?
+    (Pista: `for (int i = 5; i >= 1; i--)`)
 
 ### Errores Comunes
 Error #1: Usar un solo `=` en un `if`.
-(Escribir) `if (edad = 18)`... ¡Error!
-"Recuerda: `=` (un solo igual) es para *asignar* un valor (`edad = 15`). `==` (dos iguales) es para *comparar* (`edad == 18`). ¡Un error súper común!"
-Error #2: Bucle infinito. (Mostrar `for (int i = 1; i > 0; i++)`). "¡Esto nunca parará! Replit lo detendrá, pero ¡cuidado!"
+(Escribir `if (nota = 10)`... ¡Error! "Type mismatch: cannot convert from int to boolean").
+"¡Recuerda! `=` es para asignar, `==` es para comparar!"
+
+Error #2: Bucle infinito.
+(Mostrar `for (int i = 1; i > 0; i++)`)
+"¡Cuidado! `i` empieza en 1. Siempre será mayor que 0. Y siempre le sumas... ¡Esto nunca parará! Replit lo detendrá por ti, pero si esto corriera en tu computadora, podría congelarla. ¡Siempre revisa tu condición!"
 
 ¡Ya sabes tomar decisiones y repetir tareas! En la próxima, haremos el programa interactivo.
