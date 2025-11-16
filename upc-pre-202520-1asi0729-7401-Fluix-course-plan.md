@@ -37,7 +37,7 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 5: Fundamentos de POO y programas sencillos (15 minutos)
 * **Descripción**: ¡Vamos a construir con POO! Crearemos una clase `Mascota` con sus propios "atributos" (como nombre y edad) y "métodos" (como hacerSonido). Crearemos "objetos" desde esta plantilla.
-* **Enlace**: [PEGA AQUÍ TU ENLACE DE YOUTUBE (Video 5)]
+* **Enlace**: [Lesson-5](https://www.youtube.com/watch?v=NGMGia5M9Sw)
 * **Conclusiones clave**: Aprende sobre Encapsulación (atributos `private`) y usa "getters" para leerlos. Crearemos un programa básico que usa un objeto `Mascota`.
 * **Proyecto final**: [Lesson-5](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-05/Main.java) ¡Guarda y comparte!
 
