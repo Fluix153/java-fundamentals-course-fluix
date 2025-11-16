@@ -19,19 +19,19 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
 
 ### Lección 2: Variables y tipos de datos (8 minutos)
 * **Descripción**: Aprende a almacenar datos en Java usando variables. Escribirás tu primer "¡Hola Mundo!" y guardarás información en "cajas" llamadas variables.
-* **Enlace**: [PEGA AQUÍ TU ENLACE DE YOUTUBE (Video 2)]
+* **Enlace**: [https://www.youtube.com/watch?v=Ad_kZZtkR-Q](https://www.youtube.com/watch?v=Ad_kZZtkR-Q)
 * **Conclusiones clave**: Usa `int` para números y `String` para texto. Declara variables como `int edad = 15;` o `String nombre = "Fido";`.
 * **Práctica**: [Lesson-2](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-02/Main.java) ¡No es necesario registrarse!
 
 ### Lección 3: Estructuras de control: Decisiones y bucles (10 minutos)
 * **Descripción**: ¡Dale un "cerebro" a tu programa! Aprende a tomar decisiones con `if-else` (si... entonces...) y a repetir tareas automáticamente con bucles `for`.
-* **Enlace**: [PEGA AQUÍ TU ENLACE DE YOUTUBE (Video 3)]
+* **Enlace**: [https://www.youtube.com/watch?v=3_IBGfTTn1c](https://www.youtube.com/watch?v=3_IBGfTTn1c)
 * **Conclusiones clave**: `if (edad > 12) { ... }`; `for (int i = 0; i < 5; i++) { ... }` (Repite 5 veces).
 * **Práctica**: [Lesson-3](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-03/Main.java) ¡Inicio inmediato!
 
 ### Lección 4: Métodos, Entrada/Salida e Introducción a la POO (12 minutos)
 * **Descripción**: Aprende a crear código reutilizable con "métodos". Haz tu programa interactivo leyendo la entrada del usuario con `Scanner`. Finalmente, veremos qué es una "Clase".
-* **Enlace**: [PEGA AQUÍ TU ENLACE DE YOUTUBE (Video 4)]
+* **Enlace**: [https://www.youtube.com/watch?v=iOdzCgVCM7U](https://www.youtube.com/watch?v=iOdzCgVCM7U)
 * **Conclusiones clave**: Crea métodos como `public static void saludar() { ... }`. Usa `Scanner` para leer texto. Una `Clase` es una plantilla (ej: `class Mascota { ... }`).
 * **Práctica**: [Lesson-4](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-04/Main.java) ¡No necesitas registrarte!
 
