@@ -53,10 +53,10 @@ Este curso de 1 hora introduce a estudiantes de secundaria a los fundamentos de 
   | Número de lección | Actividad | Empezar a programar |
   | :--- | :--- | :--- |
   | 1 | ¡Hola Mundo! | [Replit](Lección 1) |
-  | 2 | Variables y Tipos de Datos | [Replit](Lección 2) |
-  | 3 | Decisiones y Bucles | [Replit](Lección 3) |
-  | 4 | Métodos y Scanner | [Replit](Lección 4) |
-  | 5 | Proyecto POO: Mascota | [Replit](Lección 5) |
+  | 2 | Variables y Tipos de Datos | [Lesson-2](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-02/Main.java) |
+  | 3 | Decisiones y Bucles | [Lesson-3](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-03/Main.java) |
+  | 4 | Métodos y Scanner | [Lesson-4](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-04/Main.java) |
+  | 5 | Proyecto POO: Mascota | [Lesson-5](https://replit.com/@jafethworren/java-fundamentals-course-fluix#completed-examples/lesson-05/Main.java) |
 
 ¡Gracias por completar el curso!
 
