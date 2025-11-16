@@ -1,50 +1,118 @@
-(Música de cierre suave, pero de logro)
+(Música de cierre suave, pero de logro, que dure unos 10-15 segundos)
 ¡Lo lograron! ¡Completaron el curso de Fundamentos de Java y POO!
 
-(Mostrar el proyecto de Mascota funcionando. Hacer clic entre `Main.java` y `Mascota.java`).
-Miren esto. En menos de una hora, pasamos de cero a un programa que usa múltiples archivos, clases, objetos y métodos.
+(Mostrar el proyecto de Mascota funcionando en Replit. Hacer clic entre `Main.java` y `Mascota.java`).
+Miren esto. En menos de una hora, pasamos de una página en blanco a un programa que usa múltiples archivos (`Main` y `Mascota`), Clases, Objetos y Métodos.
+(Presionar "Run" una última vez y mostrar la salida en la consola).
+El nombre de mi mascota es: Fido
+¡Guau! ¡Guau!
+Mi mascota tiene un nuevo nombre: Buddy
 
-Quiero que hagamos un repaso rápido de lo que aprendimos.
-- **Lección 1:** Vimos qué es Java (Minecraft, Android) y preparamos nuestro editor en línea, Replit.
-- **Lección 2:** Escribimos nuestro primer `System.out.println` y aprendimos sobre variables, las "cajas" para guardar datos como `String` (texto) e `int` (números).
-- **Lección 3:** Le dimos un cerebro al programa. Usamos `if`, `else if` y `else` para tomar decisiones, y usamos bucles `for` para repetir tareas.
-- **Lección 4:** Organizamos nuestro código con Métodos (nuestros propios comandos) y lo hicimos interactivo usando la clase `Scanner` para leer lo que el usuario escribe.
-- **Lección 5:** ¡La gran lección! Entendimos la POO. Creamos nuestra propia *Clase* (`Mascota.java`) que es un plano, y luego fabricamos *Objetos* (nuestro `miPerro`) usando la palabra `new` y un `Constructor`. Aprendimos sobre `private` (Encapsulación) y `getters`.
+¡Esto es un programa de POO real!
 
-¡Es un montón de conocimiento!
+### REPASO VISUAL DE LO APRENDIDO (Agrega 2-3 minutos)
+Quiero que hagamos un repaso visual súper rápido de todo su viaje.
+(Abrir una nueva pestaña de Replit o borrar el código de `Main.java`).
 
-Ahora, antes de terminar, el repaso más importante: Los **6 Errores Más Comunes** en Java. Si tu código se rompe, ¡99% seguro es una de estas cosas!
+**Lección 2:**
+(Pegar el código de la Lección 2 y presionar "Run")
+`System.out.println("¡Hola Mundo!");`
+`String nombre = "Fido";`
+`int edad = 5;`
+`System.out.println("Mi perro se llama " + nombre + " y tiene " + edad + " años.");`
+"Empezamos aquí. Aprendimos a imprimir en la consola y a guardar datos en 'cajas' (variables) como `String` para texto e `int` para números."
 
-(Mostrar una lista en pantalla o en el código)
+**Lección 3:**
+(Borrar y pegar el código de la Lección 3 y presionar "Run")
+`int edad = 15;`
+`if (edad >= 18) { System.out.println("Eres mayor"); } else { System.out.println("Eres menor"); }`
+`for (int i = 1; i <= 3; i++) { System.out.println(i); }`
+"Luego, le dimos un cerebro. Hicimos que el programa tomara decisiones con `if-else` y repitiera tareas con bucles `for`."
 
+**Lección 4:**
+(Borrar y pegar el código de la Lección 4 y ejecutarlo)
+`import java.util.Scanner;`
+`Scanner miScanner = new Scanner(System.in);`
+`System.out.println("¿Cómo te llamas?");`
+`String nombre = miScanner.nextLine();`
+`System.out.println("¡Hola, " + nombre + "!");`
+"Después, lo hicimos interactivo. ¡Importamos el `Scanner` e hicimos que el usuario pudiera hablarnos!"
+
+**Lección 5:**
+(Volver al proyecto de Mascota)
+"Y finalmente, todo se unió en la Lección 5. Creamos nuestra propia plantilla (`Mascota.java`), el plano, y nuestro *Objeto* (`miPerro`), la casa real.
+ Aprendimos sobre `private` (Encapsulación) y `getters`."
+
+¡Es un montón de conocimiento en una hora!
+
+### LOS 6 ERRORES MÁS COMUNES (¡EN VIVO!) (Agrega 6-8 minutos)
+Ahora, antes de terminar, el repaso más importante. Los 6 Errores Más Comunes en Java. Si tu código se rompe, ¡99% seguro es una de estas cosas!
+Voy a *mostrarles* cómo se ve cada uno.
+
+(Estar en el proyecto de Mascota).
 **Error #1: ¡Olvidar el Punto y Coma (`;`)!**
-(Mostrar un error de ;). "Lo vimos en la Lección 2. Java es estricto. Cada instrucción termina en punto y coma. Si te falta uno, el programa no correrá. ¡Revisa esto primero!"
+(Ir a `Main.java`, a la línea `miMascota.hacerSonido();` y borrar el punto y coma).
+"OK, voy a borrar este punto y coma... y voy a presionar 'Run'."
+(Presionar "Run". Esperar a que aparezca el error en la consola).
+"¡BOOM! ¡Error! La consola se pone roja. Pero no te asustes, está tratando de ayudarte. Lee el error: `Main.java:10: error: ';' expected`.
+¡Te está diciendo exactamente qué pasa! 'En el archivo Main.java, línea 10, esperaba un punto y coma'.
+(Poner el `;` de nuevo).
+"Lo arreglo, presiono 'Run' de nuevo... y funciona. ¡Siempre revisa tus punto y coma!"
 
 **Error #2: ¡Olvidar o mezclar las Llaves (`{ }`)!**
-(Mostrar un `if` sin llaves o un `for` sin llaves). "Cada `class`, `main`, `if`, `else` y `for` necesita su par de llaves de apertura `{` y cierre `}`. Si te falta una, o sobra una, ¡tendrás un desastre!"
+(Ir al final de `Main.java` y borrar la última llave de cierre `}` de `main`).
+"OK, ahora voy a borrar esta llave de cierre. Presiono 'Run'..."
+(Presionar "Run". Esperar el error).
+"¡BOOM! Otro error. `reached end of file while parsing`. ¿Qué significa eso? Significa que Java llegó al final del archivo y se confundió.
+Abrió una llave `{` para `main` pero nunca la cerró. ¡Cada `{` necesita su `}`!"
+(Arreglarlo poniendo la llave de nuevo).
 
 **Error #3: ¡Sensibilidad a Mayúsculas!**
-(Mostrar `String nombre;` y luego `system.out.println(Nombre);`)
-"¡Error! `nombre` con 'n' minúscula NO es lo mismo que `Nombre` con 'N' mayúscula. `System` (con 'S') no es lo mismo que `system` (con 's'). ¡Java es MUY sensible a esto!"
+"Este es clave. Java es MUY sensible a mayúsculas y minúsculas."
+(Ir a la línea `miMascota.hacerSonido();` y cambiarla a `miMascota.hacersonido();` (con 'h' minúscula)).
+"Mi método en `Mascota.java` se llama `hacerSonido` con 'S' mayúscula. Lo he llamado con 's' minúscula. Presiono 'Run'..."
+(Presionar "Run". Esperar el error).
+"¡Error! `cannot find symbol: method hacersonido()`. ¡Java no lo encuentra! ¿Por qué? ¡Porque `hacerSonido` y `hacersonido` son dos cosas *totalmente* diferentes para Java!
+Tienes que escribirlo exactamente igual."
+(Arreglarlo).
 
 **Error #4: Usar `=` (asignar) en lugar de `==` (comparar).**
-(Mostrar `if (edad = 18) ...`)
-"¡Este error es sutil! `if (edad == 18)` (con doble igual) es una PREGUNTA. `if (edad = 18)` (con un igual) es una ORDEN, y ¡romperá tu `if`!"
+(Ir a `Main.java` y escribir un `if` rápido al final).
+`int x = 5;`
+`if (x = 10) { System.out.println("X es 10"); }`
+"Miren este error sutil. Usé un solo `=`. Presiono 'Run'..."
+(Presionar "Run". Esperar el error).
+"¡Error! `incompatible types: int cannot be converted to boolean`. Java se confundió. Recuerden: `x = 10` (un solo igual) es una ORDEN, le dices '¡x ahora vale 10!'. `x == 10`
+(doble igual) es una PREGUNTA: '¿x es igual a 10?'. ¡En un `if`, siempre usas `==` para comparar!"
+(Borrar el código de ejemplo).
 
 **Error #5: Comparar `Strings` con `==`.**
-"Este es un error avanzado pero vital. NUNCA compares si dos `Strings` son iguales con `==`. Siempre usa el método `.equals()`."
-(Mostrar: `if (nombre.equals("Fido")) ...`) "¡Esta es la forma correcta!"
+"Este es un error avanzado pero vital. NUNCA compares si dos `Strings` (textos) son iguales con `==`. Siempre usa el método `.equals()`."
+(Mostrar: `String nombre = miPerro.getNombre(); if (nombre.equals("Fido")) { ... }`)
+"¡Esta es la forma correcta! `==` a veces funciona, pero muchas veces falla. ¡Usen siempre `.equals()` para texto!"
 
-**Error #6: El `NullPointerException`.**
-"Lo verás. Es cuando creas una variable de objeto (ej: `Mascota miMascota;`) pero olvidas *fabricar* el objeto (olvidas el `... = new Mascota(...)`). Luego, si intentas usar `miMascota.hacerSonido()`, ¡el programa explota! Porque la variable está 'vacía' o 'null'."
+**Error #6: El Temido `NullPointerException`.**
+"El error más famoso de Java. ¿Qué es?"
+(Ir a `Main.java`. Comentar la línea `Mascota miMascota = new Mascota("Fido", 3);`).
+(Escribir debajo: `Mascota miMascota;`).
+"Miren. He *declarado* la variable, he creado la caja, pero nunca he *fabricado* el objeto. Nunca usé `new`. `miMascota` está 'null', está vacía."
+"¿Qué pasa si ahora intento usarla? La línea `miMascota.hacerSonido();` sigue ahí."
+(Presionar "Run").
+"¡BOOM! `NullPointerException`. ¡Esto significa que intentaste usar un objeto que nunca creaste! ¡Intentaste usar una variable 'null'!"
+(Arreglarlo descomentando la línea original).
 
-### (Continuación) ¿Y ahora qué?
-El viaje apenas comienza. La POO es un mundo gigante. Los siguientes pasos lógicos son:
-1.  [cite_start]**Arrays y ArrayLists**: ¿Cómo crear no *una* mascota, sino una *lista* de 100 mascotas? [cite: 54]
-2.  **Herencia**: ¿Cómo crear una clase "Perro" y "Gato" que "hereden" las propiedades de "Mascota", pero que tengan sus propios métodos?
-3.  **Polimorfismo**: ¿Cómo hacer que `Perro.hacerSonido()` diga "Guau" y `Gato.hacerSonido()` diga "Miau", aunque ambos sean "Mascotas"?
+### (Continuación) ¿Y ahora qué? (Agrega 2-3 minutos)
+¡Uf! Si entendieron esos errores, están listos. ¿Pero qué sigue? El viaje apenas comienza. La POO es un mundo gigante. Los siguientes pasos lógicos son:
 
-El mejor recurso para seguir es la **Documentación oficial de Oracle Java**, o simplemente buscar tutoriales sobre esos tres temas: Herencia, Polimorfismo y ArrayLists.
+1.  [cite_start]**Arrays y ArrayLists**: Mencionamos esto en los requisitos[cite: 227]. ¿Qué es? Es cómo crear no *una* mascota, sino una *lista* de 100 mascotas.
+ Es una variable que guarda *muchos* objetos a la vez. Es súper poderoso.
+2.  **Herencia**: Es justo como suena. Podemos crear una clase `Perro` y una clase `Gato` que *hereden* todo de `Mascota`. Ambas tendrían `nombre` y `edad` automáticamente.
+ No tienes que repetir el código. El plano `Perro` es una versión especial del plano `Mascota`.
+3.  **Polimorfismo**: Suena a superhéroe. Significa 'muchas formas'. Ambas, `Perro` y `Gato`, heredan el método `hacerSonido()`. Pero podemos *reescribirlo* para que cuando
+ llames a `Perro.hacerSonido()`, diga "Guau", y cuando llames a `Gato.hacerSonido()`, diga "Miau". Es el mismo comando, pero reacciona diferente según el objeto.
+
+El mejor recurso para seguir aprendiendo es la **Documentación oficial de Oracle Java**[cite: 299], o simplemente buscar tutoriales sobre esos tres temas: Herencia,
+Polimorfismo y ArrayLists.
 
 Muchas gracias por acompañarme. Crearon un programa real hoy. Sigan construyendo, sigan curioseando, ¡y feliz programación!
 (Música de cierre)
